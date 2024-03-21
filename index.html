@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Příjmení - Korektury</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Příjmení - Korektury</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">O mně</a></li>
+          <li><a href="#experience">Služby</a></li>
+          <li><a href="#projects">Ceník</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Příjmení - Korektury</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">O mně</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Služby</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Ceník</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Svecova profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Ahoj, jmenuji se </p>
+        <h1 class="title">Jméno Příjmení</h1>
+        <p class="section__text__p2">Korektorka a lektorka Českého jazyka</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            O mně
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Kontakt
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Můh LinkedIn profil"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/instagram-pic.png"
+            alt="Můj Instagram profil"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Zjisti víc!</p>
+      <h1 class="title">O mně</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <!--Blok "Služby"-->
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Služby icon"
+                class="icon"
+              />
+              <h3>Služby</h3>
+              <p><ul>
+                <li>Lektorka Českého jazyka</li>
+                <br /><li>Korektorka v Českém jazyce</li>
+                <br /><li>Doučování</li></ul></p>
+            </div>
+            <!--Blok "Vzdělání"-->
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Vzdělání</h3>
+              <p>Bakalářské a magisterské studium na Univerzite J. E. Purkyně 
+                <br />v oboru Český jazyk a literatura</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <div class="text-container-frame">
+            <p><strong>
+              Jmenuji se Jméno Příjmení, vaše průvodkyně světem českého jazyka a literatury.
+              S více než 2 letou zkušeností ve výuce českého jazyka se s vámi těším na společnou cestu objevování krásy a síly slova.
+              Jsem lektorka českého jazyka, která věří, že jazyk je klíčem k otevření dveří do bohatého
+              světa kultury a porozumění. S mojí láskou k českému jazyku jsem se rozhodla sdílet své znalosti
+              a dovednosti s ostatními.Mým cílem je vytvářet inspirující a interaktivní výuková prostředí,
+              kde se studenti cítí pohodlně a motivováni k dosažení svých jazykových cílů.
+              Společně budeme procházet gramatikou, slovní zásobou a procvičovat praktické dovednosti,
+              abyste se stali jistými a zručnými mluvčími českého jazyka.
+            </strong></p>
+              <p><strong><br />
+              Kromě výuky českého jazyka nabízím také profesionální korektorské služby
+              pro širokou škálu textů. Jestliže se chystáte odevzdat bakalářskou práci, článek,
+              esej, nebo jakýkoliv jiný text, mohu vám pomoci zajistit, že váš materiál bude bezchybný a působivý. 
+              </strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">S čím mohu pomoci?</p>
+      <h1 class="title">Služby</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Lektorka</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Doučování Českého jazyka</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Příprava na maturitní zkoušku</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Příprava na přijímací zkoušku</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Doučování cizinců</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Korektury</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Knih</h3>
+                  <p>Individuálně - dle rozsahu stran</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bakalářské práce</h3>
+                  <p>Do 2 dnů</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Diplomové práce</h3>
+                  <p>Do 3 dnů</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Články</h3>
+                  <p>Individuálně - dle rozsahu článku</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Odborné texty</h3>
+                  <p>Individuálně - dle rozsahu stran</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <h1 class="title">CENÍK</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">POPIS1</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">POPIS2</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">POPIS3</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                DEMO
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Pokud máte zájem o spolupráci</p>
+      <h1 class="title">Napište mi</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">prijmeni@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/instagram-pic.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/">Instagram</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">O mně</a></li>
+            <li><a href="#experience">Služby</a></li>
+            <li><a href="#projects">Ceník</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Korektury - Příjmení. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
